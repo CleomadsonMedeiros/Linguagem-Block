@@ -11,12 +11,15 @@
 | Grau de Precedência | Operador | Associativade|
 |:-------------------:|:--------:|:-----------:|
 |          1          |     =    | Direita para Esquerda |
-|          2          |     +, -    | Esquerda para direita |
-|          3          |     *, /, %    | Esquerda para direita |
+|          2          |     +    | Esquerda para direita |
+|          3          |     -    | Esquerda para direita |
+|          4          |     *    | Esquerda para direita |
+|          5          |     /    | Esquerda para direita |
+|          6          |     %    | Esquerda para direita |
 
 #### 3. Delimitadores
 
-Comandos utilizam ";" (ponto e vírgula) como delimitador. Parâmetros de funções utilizam "," (vírgula). Além disso,  utiliza os delimitadores ( ) (parênteses) para agrupamento de expressões. Por fim, também é utilizado o delimitador { } (chaves) para blocos de comando.
+Comandos Rust utilizam ";" (ponto e vírgula) como delimitador. Parâmetros de funções utilizam "," (vírgula). Além disso,  utiliza os delimitadores ( ) (parênteses) para agrupamento de expressões. Por fim, também é utilizado o delimitador { } (chaves) para blocos de comando.
 
 #### 4. Identificadores
 
@@ -31,7 +34,7 @@ let CONSTANTE = "válido";
 
 #### 5. Números
 
-Dá suporte a números inteiros e com ponto flutuante.
+Rust dá suporte a números inteiros e com ponto flutuante. Os números inteiros têm variantes que basicamente indicam o número de bits suportados e cada variante pode ser não assinada ou assinada. As variantes não assinadas iniciam-se com a letra 'u', elas se referem a inteiros sem sinal, não suportando números negativos. Já as assinadas iniciam-se com a letra 'i' e se refere aos inteiros com sinal, ou seja, é capaz de suportar números negativos e positivos. Números assinados são armazenados utilizando a representação de complemento de dois. Em relação aos números de ponto flutuante existem dois tipos, o **f32** que tem 32bits e serve para números de ponto flutuantes de precisão simples, e o **f64** que tem 64bits e serve para números de ponto flutuante de precisão dupla. Eles são representados usando o padrão IEEE-754.
 
 #### 6. Condicionais
 
